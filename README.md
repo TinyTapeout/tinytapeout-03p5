@@ -10,28 +10,19 @@ This is a prototype Tiny Tapeout using the new Mux.
 
 ## Configure
 
-```
-export PDK_ROOT=<some dir>/pdk
-export OPENLANE_ROOT=<some dir>/openlane
-export OPENLANE_TAG=2023.02.14
-export OPENLANE_IMAGE_NAME=efabless/openlane:2023.05.19
-export PDK=sky130A
-make setup
+```bash
+export OPENLANE2_ROOT=~/openlane
+export SKY130_PDK_VERSION=12df12e2e74145e31c5a13de02f9a1e176b56e67
+
+pip3 install volare
+volare enable --pdk sky130 ${{ env.SKY130_PDK_VERSION }}
 
 git clone https://github.com/TinyTapeout/tt-multiplexer/
-pip install -r tt-multiplexer/proto/requirements.txt
-make gen-user-module
+pip install -r tt-multiplexer/py/requirements.txt
 ```
 
-Then apply a patch to `tt-multiplexer/proto/tt_mux.v`, which sets the number of columns per mux to 8,
-and works around an issue with `yosys` inserting buffers on the `spine_ow` signals, after the tristate buffers output.
-
-```
-git apply --directory=tt-multiplexer tt_mux.patch
-```
-
-Important: make sure you are using efabless/openlane docker tag 2023.05.19 (or newer). 
-Previous version may introduce a bug in the `tt_mux` that will result in disconnected `um_ow` signals.
+Then install OpenLane 2 with Nix, as explained [here](https://openlane2.readthedocs.io/en/latest/getting_started/nix_installation/index.html).
+Clone OpenLane 2 to ~/openlane (or change the value of the OPENLANE2_ROOT environment variable).
 
 ## Fetch projects
 
@@ -40,25 +31,24 @@ To generate your GH_TOKEN go to https://github.com/settings/tokens/new . Set the
 
 Then clone the tt03p5 branch from the tt-support-tools repo and install the required packages:
 
-```
+```bash
 git clone -b tt03p5 https://github.com/tinytapeout/tt-support-tools tt 
 ```
 
 Finally, run the following commands to fetch the user projects and generate the configuration for the user_project_wrapper:
 
-```
+```bash
 pip install -r tt/requirements.txt
 python tt/configure.py --clone-all --fetch-gds --update-caravel
 ```
 
 ## Harden
 
-```
-make tt_ctrl
-make tt_mux
-make tt_um_test
-python gen_macro_cfg.py
-make user_project_wrapper
+```bash
+cd tt-multiplexer/ol2/tt_ctrl && nix-shell ${OPENLANE2_ROOT}/shell.nix --run "python build.py"
+cd tt-multiplexer/ol2/tt_mux && nix-shell ${OPENLANE2_ROOT}/shell.nix --run "python build.py"
+# TODO: copy macros to where tt_top expects them - see the "Copy macros" step of gds.yaml
+cd tt-multiplexer/ol2/tt_top && nix-shell ${OPENLANE2_ROOT}/shell.nix --run "python build.py"
 ```
 
-Note: `user_project_wrapper` currently has LVS errors. It should have exactly 51 errors - otherwise, there's something wrong (probably with the PDN not connecting to macros).
+Note: `tt_top` has LVS errors, due to an issue with LVS when multiple output pins are shorted together. Therefore, we currently skip LVS.
