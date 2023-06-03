@@ -33,7 +33,7 @@ Finally, run the following commands to fetch the user projects and generate the 
 
 ```
 pip install -r tt/requirements.txt
-python tt/configure.py --clone-all --fetch-gds --update-caravel
+python tt/configure.py --clone-all --fetch-gds --update-caravel --sram-support
 ```
 
 ## Building the GDS files
