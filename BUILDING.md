@@ -45,4 +45,4 @@ python gen_macro_cfg.py
 make user_project_wrapper
 ```
 
-Note: `user_project_wrapper` currently has LVS errors. It should have exactly 51 errors - otherwise, there's something wrong (probably with the PDN not connecting to macros).
+Note: `user_project_wrapper` currently has LVS errors. It should have exactly 205 errors - otherwise, there's something wrong (probably with the PDN not connecting to macros).
