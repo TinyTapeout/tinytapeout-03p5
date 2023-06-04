@@ -264,6 +264,15 @@
 + uo_out[7] vccd1 vssd1
 .ends
 
+* Black-box entry subcircuit for tt_um_ringosc_cnt_pfet abstract view
+.subckt tt_um_ringosc_cnt_pfet clk ena rst_n ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4]
++ ui_in[5] ui_in[6] ui_in[7] uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5]
++ uio_in[6] uio_in[7] uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5]
++ uio_oe[6] uio_oe[7] uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5]
++ uio_out[6] uio_out[7] uo_out[0] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5]
++ uo_out[6] uo_out[7] vssd1 vccd1
+.ends
+
 * Black-box entry subcircuit for tt_um_loopback abstract view
 .subckt tt_um_loopback VGND VPWR clk ena rst_n ui_in[0] ui_in[1] ui_in[2] ui_in[3]
 + ui_in[4] ui_in[5] ui_in[6] ui_in[7] uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4]
@@ -1035,7 +1044,7 @@ Xtt_top1.branch\[1\].col_um\[7\].um_bot_I.block_0_23.tt_um_I tt_top1.branch\[1\]
 + tt_top1.branch\[1\].mux_I/um_ow[338] tt_top1.branch\[1\].mux_I/um_ow[339] tt_top1.branch\[1\].mux_I/um_ow[340]
 + tt_top1.branch\[1\].mux_I/um_ow[341] tt_top1.branch\[1\].mux_I/um_ow[342] tt_top1.branch\[1\].mux_I/um_ow[343]
 + vccd1 vssd1 tt_um_cam
-Xtt_top1.branch\[1\].col_um\[0\].um_top_I.block_1_16.tt_um_I vssd1 vccd1 tt_top1.branch\[1\].mux_I/um_iw[18]
+Xtt_top1.branch\[1\].col_um\[0\].um_top_I.block_1_16.tt_um_I tt_top1.branch\[1\].mux_I/um_iw[18]
 + tt_top1.branch\[1\].mux_I/um_ena[1] tt_top1.branch\[1\].mux_I/um_iw[19] tt_top1.branch\[1\].mux_I/um_iw[20]
 + tt_top1.branch\[1\].mux_I/um_iw[21] tt_top1.branch\[1\].mux_I/um_iw[22] tt_top1.branch\[1\].mux_I/um_iw[23]
 + tt_top1.branch\[1\].mux_I/um_iw[24] tt_top1.branch\[1\].mux_I/um_iw[25] tt_top1.branch\[1\].mux_I/um_iw[26]
@@ -1050,7 +1059,7 @@ Xtt_top1.branch\[1\].col_um\[0\].um_top_I.block_1_16.tt_um_I vssd1 vccd1 tt_top1
 + tt_top1.branch\[1\].mux_I/um_ow[39] tt_top1.branch\[1\].mux_I/um_ow[24] tt_top1.branch\[1\].mux_I/um_ow[25]
 + tt_top1.branch\[1\].mux_I/um_ow[26] tt_top1.branch\[1\].mux_I/um_ow[27] tt_top1.branch\[1\].mux_I/um_ow[28]
 + tt_top1.branch\[1\].mux_I/um_ow[29] tt_top1.branch\[1\].mux_I/um_ow[30] tt_top1.branch\[1\].mux_I/um_ow[31]
-+ tt_um_loopback
++ vssd1 vccd1 tt_um_ringosc_cnt_pfet
 Xtt_top1.branch\[0\].col_um\[0\].um_top_I.block_1_0.tt_um_I vssd1 vccd1 tt_top1.branch\[0\].mux_I/um_iw[18]
 + tt_top1.branch\[0\].mux_I/um_ena[1] tt_top1.branch\[0\].mux_I/um_iw[19] tt_top1.branch\[0\].mux_I/um_iw[20]
 + tt_top1.branch\[0\].mux_I/um_iw[21] tt_top1.branch\[0\].mux_I/um_iw[22] tt_top1.branch\[0\].mux_I/um_iw[23]

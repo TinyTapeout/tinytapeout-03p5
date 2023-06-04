@@ -2877,7 +2877,7 @@ module user_project_wrapper (user_clock2,
     \tt_top1.branch[1].col_um[0].um_bot_I.ow[2] ,
     \tt_top1.branch[1].col_um[0].um_bot_I.ow[1] ,
     \tt_top1.branch[1].col_um[0].um_bot_I.ow[0] }));
- tt_um_loopback \tt_top1.branch[1].col_um[0].um_top_I.block_1_16.tt_um_I  (.clk(\tt_top1.branch[1].col_um[0].um_top_I.clk ),
+ tt_um_ringosc_cnt_pfet \tt_top1.branch[1].col_um[0].um_top_I.block_1_16.tt_um_I  (.clk(\tt_top1.branch[1].col_um[0].um_top_I.clk ),
     .ena(\tt_top1.branch[1].col_um[0].um_top_I.ena ),
     .rst_n(\tt_top1.branch[1].col_um[0].um_top_I.iw[1] ),
     .ui_in({\tt_top1.branch[1].col_um[0].um_top_I.iw[9] ,
