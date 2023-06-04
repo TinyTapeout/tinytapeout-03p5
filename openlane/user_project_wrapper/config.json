@@ -55,7 +55,8 @@
         "dir::../../lef/tt_um_millerresearch_top.lef",
         "dir::../../lef/tt_um_Reloj_top.lef",
         "dir::../../lef/tt_um_gatecat_fpga_top.lef",
-        "dir::../../lef/tt_um_greycode_top.lef"
+        "dir::../../lef/tt_um_greycode_top.lef",
+        "dir::../../lef/tt_um_ringosc_cnt_pfet.lef"
     ],
     "EXTRA_GDS_FILES": [
         "dir::../../gds/tt_ctrl.gds",
@@ -88,7 +89,8 @@
         "dir::../../gds/tt_um_millerresearch_top.gds",
         "dir::../../gds/tt_um_Reloj_top.gds",
         "dir::../../gds/tt_um_gatecat_fpga_top.gds",
-        "dir::../../gds/tt_um_greycode_top.gds"
+        "dir::../../gds/tt_um_greycode_top.gds",
+        "dir::../../gds/tt_um_ringosc_cnt_pfet.gds"
     ],
     "RUN_KLAYOUT_XOR": 0,
     "RUN_KLAYOUT_DRC": 0,

@@ -27,3 +27,4 @@
 `include "gl/tt_um_Reloj_top.v"
 `include "gl/tt_um_gatecat_fpga_top.v"
 `include "gl/tt_um_greycode_top.v"
+`include "gl/tt_um_ringosc_cnt_pfet.v"

@@ -40,3 +40,4 @@
 | 25 | Daniel Arevalos | Wall Clock and Alarm | HDL | https://github.com/lild4d4/tt03p5-Wall-Clock-and-Alarm |
 | 26 | myrtle | FPGA test | HDL | https://github.com/psychogenic/tt03p5-gatecat-fpga |
 | 27 | Daniel Wisehart | Grey-code divide by 10 and 100 of six different ring oscillators | HDL | https://github.com/dwisehart/tt03p5-greycode |
+| 28 | Uri Shaked | Ring oscillator with counter, PFET-gated | HDL | https://github.com/TinyTapeout/tt03p5-ringosc-cnt-with-pfet |

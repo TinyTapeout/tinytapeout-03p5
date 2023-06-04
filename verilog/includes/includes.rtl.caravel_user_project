@@ -41,3 +41,4 @@
 -v $(USER_PROJECT_VERILOG)/rtl/025_tt_um_Reloj_top.v
 -v $(USER_PROJECT_VERILOG)/rtl/026_fpga.v
 -v $(USER_PROJECT_VERILOG)/rtl/027_top.v
+-v $(USER_PROJECT_VERILOG)/rtl/028_tt_um_ringosc_cnt.v

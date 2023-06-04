@@ -30,3 +30,4 @@
 -v $(USER_PROJECT_VERILOG)/gl/tt_um_Reloj_top.v
 -v $(USER_PROJECT_VERILOG)/gl/tt_um_gatecat_fpga_top.v
 -v $(USER_PROJECT_VERILOG)/gl/tt_um_greycode_top.v
+-v $(USER_PROJECT_VERILOG)/gl/tt_um_ringosc_cnt_pfet.v
