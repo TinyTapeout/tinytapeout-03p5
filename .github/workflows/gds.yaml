@@ -97,7 +97,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: user_project_wrapper
-          path: openlane/user_project_wrapper/runs/user_project_wrapper/*
+          path: openlane/user_project_wrapper/runs
 
     - name: upload macros artifact
       uses: actions/upload-artifact@v3
