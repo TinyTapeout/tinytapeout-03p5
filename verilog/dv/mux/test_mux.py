@@ -3,8 +3,15 @@ import logging
 from cocotb.clock import Clock
 from cocotb.triggers import RisingEdge, FallingEdge, ClockCycles, with_timeout
 
-async def enable_design(dut, x, y):
+# modules get assigned in this order
+x_order = [0, 1, 2, 3, 4, 5, 6, 7, 16, 17, 18, 19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5, 6, 7, 16, 17, 18, 19, 20, 21, 22, 23]
+y_order = [0, 0, 0, 0, 0, 0, 0, 0, 0,  0,  0,  0,  0,  0,  0,  0,  1, 1, 1, 1, 1, 1, 1, 1, 1,  1,  1,  1,  1,  1,  1,  1 ]
+
+async def enable_design(dut, module):
     # RTL for the controller test: Y = cur_core[9:5] X = cur_core[4:0] 
+    x = x_order[module]
+    y = y_order[module]
+
     assert x < 2**5
     assert y < 2**5
 
@@ -33,35 +40,37 @@ async def test_mux(dut):
     clock = Clock(dut.clk, 100, units="ns") # 10 MHz
     cocotb.start_soon(clock.start())
 
-    dut.uio_in.value = 0
-    dut.ui_in.value = 0
-    # select test design
-    dut.reset_n.value = 0
-    await enable_design(dut, 0, 0)
+    for design in range(20):
+        
+        dut.uio_in.value = 0
+        dut.ui_in.value = 0
+        # select test design
+        dut.reset_n.value = 0
+        await enable_design(dut, design)
 
-    # with bit 0 of ui_in set to 0, module will copy inputs to outputs
-    dut.ui_in.value = 0b0
-    await ClockCycles(dut.clk, 5) # wait until the wait state config is read
-    dut.reset_n.value = 1
+        # with bit 0 of ui_in set to 0, module will copy inputs to outputs
+        dut.ui_in.value = 0b0
+        await ClockCycles(dut.clk, 5) # wait until the wait state config is read
+        dut.reset_n.value = 1
 
-    dut._log.info("test loopback")
-    for i in range(256):
-        dut.uio_in.value = i
-        await ClockCycles(dut.clk, 1)
-        assert dut.uo_out.value == i
+        dut._log.info("test loopback")
+        for i in range(256):
+            dut.uio_in.value = i
+            await ClockCycles(dut.clk, 1)
+            assert dut.uo_out.value == i
 
 
-    # with bit 0 of ui_in set to 1, module will enable bidirectional outputs and put a counter on both output and bidirectional output
-    dut.ui_in.value = 0b1
-    
-    # reset it
-    dut.reset_n.value = 0
-    await ClockCycles(dut.clk, 5) # wait until the wait state config is read
-    dut.reset_n.value = 1
-    await ClockCycles(dut.clk, 2) # sync
-     
-    dut._log.info("test counter")
-    for i in range(256):
-        assert dut.uo_out.value == dut.uio_out.value
-        assert dut.uo_out.value == i
-        await ClockCycles(dut.clk, 1) # wait until the wait state config is read
+        # with bit 0 of ui_in set to 1, module will enable bidirectional outputs and put a counter on both output and bidirectional output
+        dut.ui_in.value = 0b1
+        
+        # reset it
+        dut.reset_n.value = 0
+        await ClockCycles(dut.clk, 5) # wait until the wait state config is read
+        dut.reset_n.value = 1
+        await ClockCycles(dut.clk, 2) # sync
+         
+        dut._log.info("test counter")
+        for i in range(256):
+            assert dut.uo_out.value == dut.uio_out.value
+            assert dut.uo_out.value == i
+            await ClockCycles(dut.clk, 1) # wait until the wait state config is read
