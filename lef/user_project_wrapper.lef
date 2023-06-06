@@ -6552,7 +6552,7 @@ MACRO user_project_wrapper
         RECT 2.800 31.300 2917.930 31.980 ;
         RECT 0.270 13.775 2917.930 31.300 ;
       LAYER met4 ;
-        RECT 0.295 17.175 2904.145 3501.825 ;
+        RECT 0.295 17.175 2904.145 3502.505 ;
   END
 END user_project_wrapper
 END LIBRARY
