@@ -4,9 +4,11 @@ on: [ push, workflow_dispatch, pull_request ]
 jobs:
   sta:
     env:
-        OPENLANE_ROOT:  /home/runner/openlane
-        PDK_ROOT:       /home/runner/pdk
-        PDK:            sky130A
+        OPENLANE_TAG:           2023.02.14
+        OPENLANE_IMAGE_NAME:    efabless/openlane:2023.05.19
+        OPENLANE_ROOT:          /home/runner/openlane
+        PDK_ROOT:               /home/runner/pdk
+        PDK:                    sky130A
     # ubuntu
     runs-on: ubuntu-latest
     steps:
@@ -52,6 +54,9 @@ jobs:
     # fetch the repos,
     - name: Fetch user project, update caravel configuration
       run: python ./tt/configure.py --test --clone-all --fetch-gds --update-caravel
+      env:
+        GH_TOKEN:       ${{ secrets.GH_TOKEN }}
+        GH_USERNAME:    ${{ secrets.GH_USERNAME }}
 
     # generate the tt mux verilog that instantiates all the modules - use the test version
     - name: module config
