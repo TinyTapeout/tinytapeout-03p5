@@ -8,7 +8,6 @@ module test_mux_tb(
     output wire [7:0] uo_out,
 	input  wire [7:0] uio_in,	// IOs: Input path
 	output wire [7:0] uio_out,	// IOs: Output path
-	output wire [7:0] uio_oe,	// IOs: Enable path (active high: 0=input, 1=output)
 
     // control interface
 	input wire ctrl_sel_rst_n,
@@ -29,19 +28,18 @@ module test_mux_tb(
     05:04 clock
     */
 
-    assign io_in[31:24] = ui_in;
-    assign uio_out = io_out[31:24];
-    assign uio_oe =  io_oeb[31:24];
+    assign io_in[31:24]     = uio_in[7:0];
+    assign uio_out[7:0]     = io_out[31:24];
 
-	assign io_in[6] = clk;
-	assign io_in[7] = reset_n;
-    assign io_in[15:8] = ui_in;
-    assign uo_out              = io_out[23:16];
+	assign io_in[6]         = clk;
+	assign io_in[7]         = reset_n;
+    assign io_in[15:8]      = ui_in[7:0];
+    assign uo_out[7:0]      = io_out[23:16];
 
     // copied from proto/tt_top_tb.v
-	assign io_in[36] = ctrl_sel_rst_n;
-	assign io_in[34] = ctrl_sel_inc;
-	assign io_in[32] = ctrl_ena;
+	assign io_in[36]        = ctrl_sel_rst_n;
+	assign io_in[34]        = ctrl_sel_inc;
+	assign io_in[32]        = ctrl_ena;
 
 
     `ifdef SIM_ICARUS

@@ -41,10 +41,7 @@ jobs:
       with:
         repository: tinytapeout/tt-multiplexer
         path: tt-multiplexer
-
-    # tristate & num modules patch
-    - name: patch
-      run: git apply --directory=tt-multiplexer tt_mux.patch
+        ref: tt03p5
 
     # build pdk - have to move this back above to get caravel makefile
     - name: pdk & openlane & precheck
@@ -83,7 +80,7 @@ jobs:
 
     # need the modules lef & gds
     - name: ttmux GDS
-      run: make tt_ctrl tt_mux tt_um_test 
+      run: make tt_ctrl tt_mux 
 
     # macro config, depends on the ttmux build artifacts being present
     - name: macro config

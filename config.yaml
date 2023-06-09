@@ -7,4 +7,4 @@ extra_projects: extra_projects.yaml
 project_dir: 'projects'
 test_project_dir: 'test_projects'
 
-num_projects: 9
+num_projects: 32

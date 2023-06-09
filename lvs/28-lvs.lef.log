@@ -1,0 +1,807 @@
+Netgen 1.5.244 compiled on Thu Dec 22 11:09:29 UTC 2022
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Reading netlist file /home/uri/p/tinytapeout-03p5/openlane/user_project_wrapper/runs/23_06_02_23_47/results/signoff/user_project_wrapper.spice
+Reading netlist file /home/uri/p/tinytapeout-03p5/openlane/user_project_wrapper/runs/23_06_02_23_47/tmp/signoff/25-user_project_wrapper.pnl.v
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Creating placeholder cell definition for module tt_um_as1802.
+Creating placeholder cell definition for module tt_um_loopback.
+Creating placeholder cell definition for module tt_um_urish_simon.
+Creating placeholder cell definition for module tt_um_power_test.
+Creating placeholder cell definition for module tt_um_kiwih_tt_top.
+Creating placeholder cell definition for module tt_um_htfab_totp.
+Creating placeholder cell definition for module tt_um_wokwi_366318576852367361.
+Creating placeholder cell definition for module tt_um_gatecat_fpga_top.
+Creating placeholder cell definition for module tt_um_urish_dffram.
+Creating placeholder cell definition for module tt_um_Reloj_top.
+Creating placeholder cell definition for module tt_um_algofoogle_solo_squash.
+Creating placeholder cell definition for module tt_um_apu_pulse.
+Creating placeholder cell definition for module tt_um_thorkn_vgaclock.
+Creating placeholder cell definition for module tt_mux.
+Creating placeholder cell definition for module tt_um_greycode_top.
+Creating placeholder cell definition for module tt_um_moyes0_top_module.
+Creating placeholder cell definition for module tt_um_wokwi_347497504164545108.
+Creating placeholder cell definition for module tt_um_vga_clock.
+Creating placeholder cell definition for module tt_um_wokwi_347144898258928211.
+Creating placeholder cell definition for module tt_um_TrainLED2_top.
+Creating placeholder cell definition for module tt_um_wokwi_347417602591556180.
+Creating placeholder cell definition for module tt_um_tomkeddie_a.
+Creating placeholder cell definition for module tt_um_millerresearch_top.
+Creating placeholder cell definition for module tt_um_ternaryPC_radixconvert.
+Creating placeholder cell definition for module tt_um_psychogenic_neptuneproportional.
+Creating placeholder cell definition for module tt_um_MichaelBell_hovalaag.
+Creating placeholder cell definition for module tt_um_test.
+Creating placeholder cell definition for module tt_um_cam.
+Creating placeholder cell definition for module sky130_sram_2kbyte_1rw1r_32x512_8.
+Creating placeholder cell definition for module tt_um_urish_sram_poc.
+Creating placeholder cell definition for module tt_ctrl.
+Reading setup file /home/uri/openmpw/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Comparison output logged to file /home/uri/p/tinytapeout-03p5/openlane/user_project_wrapper/runs/23_06_02_23_47/logs/signoff/28-user_project_wrapper.lef.lvs.log
+Logging to file "/home/uri/p/tinytapeout-03p5/openlane/user_project_wrapper/runs/23_06_02_23_47/logs/signoff/28-user_project_wrapper.lef.lvs.log" enabled
+
+Contents of circuit 1:  Circuit: 'tt_um_greycode_top'
+Circuit tt_um_greycode_top contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_greycode_top'
+Circuit tt_um_greycode_top contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_greycode_top contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_as1802'
+Circuit tt_um_as1802 contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_as1802'
+Circuit tt_um_as1802 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_as1802 contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_urish_sram_poc'
+Circuit tt_um_urish_sram_poc contains 0 device instances.
+Circuit contains 0 nets, and 125 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_urish_sram_poc'
+Circuit tt_um_urish_sram_poc contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_urish_sram_poc contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_wokwi_347497504164545108'
+Circuit tt_um_wokwi_347497504164545108 contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_wokwi_347497504164545108'
+Circuit tt_um_wokwi_347497504164545108 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_wokwi_347497504164545108 contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_vga_clock'
+Circuit tt_um_vga_clock contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_vga_clock'
+Circuit tt_um_vga_clock contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_vga_clock contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_thorkn_vgaclock'
+Circuit tt_um_thorkn_vgaclock contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_thorkn_vgaclock'
+Circuit tt_um_thorkn_vgaclock contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_thorkn_vgaclock contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_millerresearch_top'
+Circuit tt_um_millerresearch_top contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_millerresearch_top'
+Circuit tt_um_millerresearch_top contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_millerresearch_top contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_apu_pulse'
+Circuit tt_um_apu_pulse contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_apu_pulse'
+Circuit tt_um_apu_pulse contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_apu_pulse contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_algofoogle_solo_squash'
+Circuit tt_um_algofoogle_solo_squash contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_algofoogle_solo_squash'
+Circuit tt_um_algofoogle_solo_squash contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_algofoogle_solo_squash contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_ternaryPC_radixconvert'
+Circuit tt_um_ternaryPC_radixconvert contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_ternaryPC_radixconvert'
+Circuit tt_um_ternaryPC_radixconvert contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_ternaryPC_radixconvert contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_Reloj_top'
+Circuit tt_um_Reloj_top contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_Reloj_top'
+Circuit tt_um_Reloj_top contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_Reloj_top contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_wokwi_347417602591556180'
+Circuit tt_um_wokwi_347417602591556180 contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_wokwi_347417602591556180'
+Circuit tt_um_wokwi_347417602591556180 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_wokwi_347417602591556180 contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_gatecat_fpga_top'
+Circuit tt_um_gatecat_fpga_top contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_gatecat_fpga_top'
+Circuit tt_um_gatecat_fpga_top contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_gatecat_fpga_top contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_htfab_totp'
+Circuit tt_um_htfab_totp contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_htfab_totp'
+Circuit tt_um_htfab_totp contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_htfab_totp contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_power_test'
+Circuit tt_um_power_test contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_power_test'
+Circuit tt_um_power_test contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_power_test contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_mux'
+Circuit tt_mux contains 0 device instances.
+Circuit contains 0 nets, and 770 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_mux'
+Circuit tt_mux contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_mux contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_test'
+Circuit tt_um_test contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_test'
+Circuit tt_um_test contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_test contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_cam'
+Circuit tt_um_cam contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_cam'
+Circuit tt_um_cam contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_cam contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_loopback'
+Circuit tt_um_loopback contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_loopback'
+Circuit tt_um_loopback contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_loopback contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_ctrl'
+Circuit tt_ctrl contains 0 device instances.
+Circuit contains 0 nets, and 106 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_ctrl'
+Circuit tt_ctrl contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_ctrl contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_moyes0_top_module'
+Circuit tt_um_moyes0_top_module contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_moyes0_top_module'
+Circuit tt_um_moyes0_top_module contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_moyes0_top_module contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_tomkeddie_a'
+Circuit tt_um_tomkeddie_a contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_tomkeddie_a'
+Circuit tt_um_tomkeddie_a contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_tomkeddie_a contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_sram_2kbyte_1rw1r_32x512_8'
+Circuit sky130_sram_2kbyte_1rw1r_32x512_8 contains 0 device instances.
+Circuit contains 0 nets, and 125 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_sram_2kbyte_1rw1r_32x512_8'
+Circuit sky130_sram_2kbyte_1rw1r_32x512_8 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit sky130_sram_2kbyte_1rw1r_32x512_8 contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_urish_dffram'
+Circuit tt_um_urish_dffram contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_urish_dffram'
+Circuit tt_um_urish_dffram contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_urish_dffram contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_wokwi_347144898258928211'
+Circuit tt_um_wokwi_347144898258928211 contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_wokwi_347144898258928211'
+Circuit tt_um_wokwi_347144898258928211 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_wokwi_347144898258928211 contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_TrainLED2_top'
+Circuit tt_um_TrainLED2_top contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_TrainLED2_top'
+Circuit tt_um_TrainLED2_top contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_TrainLED2_top contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_wokwi_366318576852367361'
+Circuit tt_um_wokwi_366318576852367361 contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_wokwi_366318576852367361'
+Circuit tt_um_wokwi_366318576852367361 contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_wokwi_366318576852367361 contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_kiwih_tt_top'
+Circuit tt_um_kiwih_tt_top contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_kiwih_tt_top'
+Circuit tt_um_kiwih_tt_top contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_kiwih_tt_top contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_psychogenic_neptuneproportional'
+Circuit tt_um_psychogenic_neptuneproportional contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_psychogenic_neptuneproportional'
+Circuit tt_um_psychogenic_neptuneproportional contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_psychogenic_neptuneproportional contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_MichaelBell_hovalaag'
+Circuit tt_um_MichaelBell_hovalaag contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_MichaelBell_hovalaag'
+Circuit tt_um_MichaelBell_hovalaag contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_MichaelBell_hovalaag contains no devices.
+
+Contents of circuit 1:  Circuit: 'tt_um_urish_simon'
+Circuit tt_um_urish_simon contains 0 device instances.
+Circuit contains 0 nets, and 45 disconnected pins.
+Contents of circuit 2:  Circuit: 'tt_um_urish_simon'
+Circuit tt_um_urish_simon contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit tt_um_urish_simon contains no devices.
+Pins io_oeb[37] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[35] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[34] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[33] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[32] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[23] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[22] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[21] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[20] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[19] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[18] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[17] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[16] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[15] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[14] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[13] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[12] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[11] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[10] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[9] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[8] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[7] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[6] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[5] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[4] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[3] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[2] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[1] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[0] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[37] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[36] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[35] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[34] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[33] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[32] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[15] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[14] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[13] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[12] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[11] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[10] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[9] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[8] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[7] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[6] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[5] and user_clock2 are shorted in cell user_project_wrapper (1)
+Pins io_out[4] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[3] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[2] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[1] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[0] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins la_data_out[127] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[126] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[125] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[124] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[123] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[122] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[121] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[120] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[119] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[118] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[117] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[116] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[115] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[114] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[113] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[112] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[111] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[110] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[109] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[108] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[107] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[106] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[105] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[104] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[103] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[102] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[101] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[100] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[99] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[98] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[97] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[96] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[95] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[94] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[93] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[92] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[91] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[90] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[89] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[88] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[87] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[86] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[85] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[84] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[83] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[82] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[81] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[80] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[79] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[78] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[77] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[76] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[75] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[74] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[73] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[72] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[71] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[70] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[69] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[68] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[67] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[66] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[65] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[64] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[63] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[62] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[61] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[60] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[59] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[58] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[57] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[56] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[55] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[54] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[53] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[52] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[51] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[50] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[49] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[48] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[47] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[46] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[45] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[44] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[43] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[42] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[41] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[40] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[39] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[38] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[37] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[36] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[35] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[34] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[33] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[32] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[31] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[30] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[29] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[28] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[27] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[26] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[25] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[24] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[23] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[22] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[21] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[20] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[19] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[18] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[17] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[16] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[15] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[14] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[13] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[12] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[11] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[10] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins user_irq[2] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins user_irq[1] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins user_irq[0] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[31] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[30] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[29] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[28] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[27] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[26] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[25] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[24] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[23] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[22] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[21] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[20] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[19] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[18] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[17] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[16] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[15] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[14] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[13] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[12] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[11] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[10] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[9] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[8] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[7] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[6] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[5] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[4] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[3] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[2] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[1] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[0] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+
+Contents of circuit 1:  Circuit: 'user_project_wrapper'
+Circuit user_project_wrapper contains 33 device instances.
+  Class: tt_um_wokwi_347417602591556180 instances:   1
+  Class: tt_um_test            instances:   1
+  Class: tt_um_apu_pulse       instances:   1
+  Class: tt_um_greycode_top    instances:   1
+  Class: tt_um_algofoogle_solo_squash instances:   1
+  Class: tt_um_wokwi_347144898258928211 instances:   1
+  Class: tt_um_htfab_totp      instances:   1
+  Class: tt_um_psychogenic_neptuneproportional instances:   1
+  Class: tt_um_urish_sram_poc  instances:   1
+  Class: sky130_sram_2kbyte_1rw1r_32x512_8 instances:   1
+  Class: tt_um_urish_dffram    instances:   1
+  Class: tt_um_kiwih_tt_top    instances:   1
+  Class: tt_um_millerresearch_top instances:   1
+  Class: tt_um_MichaelBell_hovalaag instances:   1
+  Class: tt_um_tomkeddie_a     instances:   1
+  Class: tt_um_loopback        instances:   2
+  Class: tt_um_gatecat_fpga_top instances:   1
+  Class: tt_um_wokwi_347497504164545108 instances:   1
+  Class: tt_um_cam             instances:   1
+  Class: tt_um_thorkn_vgaclock instances:   1
+  Class: tt_um_TrainLED2_top   instances:   1
+  Class: tt_um_moyes0_top_module instances:   1
+  Class: tt_mux                instances:   2
+  Class: tt_um_wokwi_366318576852367361 instances:   1
+  Class: tt_um_vga_clock       instances:   1
+  Class: tt_um_power_test      instances:   1
+  Class: tt_um_Reloj_top       instances:   1
+  Class: tt_um_as1802          instances:   1
+  Class: tt_um_urish_simon     instances:   1
+  Class: tt_um_ternaryPC_radixconvert instances:   1
+  Class: tt_ctrl               instances:   1
+Circuit contains 1558 nets, and 382 disconnected pins.
+Contents of circuit 2:  Circuit: 'user_project_wrapper'
+Circuit user_project_wrapper contains 33 device instances.
+  Class: tt_um_wokwi_347417602591556180 instances:   1
+  Class: tt_um_test            instances:   1
+  Class: tt_um_apu_pulse       instances:   1
+  Class: tt_um_greycode_top    instances:   1
+  Class: tt_um_algofoogle_solo_squash instances:   1
+  Class: tt_um_wokwi_347144898258928211 instances:   1
+  Class: tt_um_htfab_totp      instances:   1
+  Class: tt_um_psychogenic_neptuneproportional instances:   1
+  Class: tt_um_urish_sram_poc  instances:   1
+  Class: sky130_sram_2kbyte_1rw1r_32x512_8 instances:   1
+  Class: tt_um_urish_dffram    instances:   1
+  Class: tt_um_kiwih_tt_top    instances:   1
+  Class: tt_um_millerresearch_top instances:   1
+  Class: tt_um_MichaelBell_hovalaag instances:   1
+  Class: tt_um_tomkeddie_a     instances:   1
+  Class: tt_um_loopback        instances:   2
+  Class: tt_um_gatecat_fpga_top instances:   1
+  Class: tt_um_wokwi_347497504164545108 instances:   1
+  Class: tt_um_cam             instances:   1
+  Class: tt_um_thorkn_vgaclock instances:   1
+  Class: tt_um_TrainLED2_top   instances:   1
+  Class: tt_um_moyes0_top_module instances:   1
+  Class: tt_mux                instances:   2
+  Class: tt_um_wokwi_366318576852367361 instances:   1
+  Class: tt_um_vga_clock       instances:   1
+  Class: tt_um_power_test      instances:   1
+  Class: tt_um_Reloj_top       instances:   1
+  Class: tt_um_as1802          instances:   1
+  Class: tt_um_ternaryPC_radixconvert instances:   1
+  Class: tt_um_urish_simon     instances:   1
+  Class: tt_ctrl               instances:   1
+Circuit contains 1559 nets, and 381 disconnected pins.
+
+Circuit 1 contains 33 devices, Circuit 2 contains 33 devices.
+Circuit 1 contains 1558 nets,    Circuit 2 contains 1558 nets.
+
+Pins io_out[5] and user_clock2 are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[0] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[1] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[2] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[3] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[4] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[5] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[6] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[7] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[8] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[9] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[10] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[11] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[12] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[13] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[14] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[15] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[16] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[17] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[18] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[19] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[20] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[21] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[22] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[23] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[24] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[25] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[26] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[27] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[28] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[29] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[30] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins wbs_dat_o[31] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins user_irq[0] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins user_irq[1] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins user_irq[2] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[10] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[11] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[12] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[13] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[14] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[15] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[16] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[17] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[18] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[19] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[20] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[21] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[22] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[23] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[24] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[25] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[26] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[27] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[28] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[29] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[30] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[31] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[32] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[33] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[34] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[35] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[36] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[37] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[38] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[39] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[40] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[41] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[42] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[43] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[44] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[45] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[46] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[47] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[48] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[49] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[50] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[51] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[52] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[53] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[54] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[55] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[56] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[57] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[58] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[59] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[60] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[61] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[62] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[63] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[64] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[65] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[66] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[67] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[68] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[69] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[70] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[71] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[72] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[73] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[74] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[75] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[76] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[77] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[78] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[79] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[80] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[81] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[82] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[83] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[84] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[85] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[86] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[87] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[88] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[89] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[90] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[91] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[92] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[93] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[94] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[95] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[96] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[97] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[98] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[99] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[100] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[101] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[102] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[103] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[104] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[105] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[106] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[107] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[108] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[109] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[110] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[111] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[112] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[113] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[114] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[115] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[116] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[117] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[118] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[119] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[120] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[121] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[122] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[123] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[124] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[125] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[126] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins la_data_out[127] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[4] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[32] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[33] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[34] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[35] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[36] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[37] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[4] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[5] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[16] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[17] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[18] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[19] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[20] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[21] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[22] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[23] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[33] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[35] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_oeb[37] and wbs_ack_o are shorted in cell user_project_wrapper (1)
+Pins io_out[0] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[1] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[2] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[3] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[6] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[7] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[8] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[9] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[10] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[11] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[12] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[13] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[14] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_out[15] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[0] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[1] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[2] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[3] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[6] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[7] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[8] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[9] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[10] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[11] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[12] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[13] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[14] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[15] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[32] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+Pins io_oeb[34] and io_oeb[36] are shorted in cell user_project_wrapper (1)
+
+Final result: 
+Top level cell failed pin matching.
+
+Logging to file "/home/uri/p/tinytapeout-03p5/openlane/user_project_wrapper/runs/23_06_02_23_47/logs/signoff/28-user_project_wrapper.lef.lvs.log" disabled
+LVS Done.

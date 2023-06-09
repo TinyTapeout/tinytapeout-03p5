@@ -348,4 +348,4 @@ caravel-sta: ./env/spef-mapping.tcl
 gen-user-module:
 	@echo "Generating user module"
 	@cp tt_user_module.yaml tt-multiplexer/proto/
-	@cd tt-multiplexer/proto && python3 gen_tt_user_module.py
+	@cd tt-multiplexer/proto && ./gen_tt_user_module.py

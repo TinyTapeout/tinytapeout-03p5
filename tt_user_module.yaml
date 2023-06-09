@@ -1,29 +1,64 @@
-"0.0": "as1802"
-"0.1": "urish_simon"
-"0.2": "MichaelBell_hovalaag"
-"0.3": "cam" # https://github.com/irtzonevrakis/tt03p5-content-addressable-memory
-"0.4": "urish_dffram"
-"0.16": "TrainLED2_top"
-"0.17": "moyes0_top_module"
-"0.18": "vga_clock"
-"0.19": "kiwih_tt_top"
-"0.20": "test"
-"0.21": "test"
-"0.22": "test"
-"0.23": "test"
-"1.0": "test"
-"1.1": "test"
-"1.2": "test"
-"1.3": "test"
-"1.4": "test"
-"1.5": "test"
-"1.6": "test"
-"1.7": "test"
-"1.16": "test"
-"1.17": "test"
-"1.18": "test"
-"1.19": "test"
-"1.20": "test"
-"1.21": "test"
-"1.22": "test"
-"1.23": "test"
+"0.0": 
+  name: "as1802"
+  shift: true
+"0.1": 
+  name: "urish_simon"
+"0.2": 
+  name: "kiwih_tt_top"
+"0.3":
+  name: "wokwi_366318576852367361"
+"0.4": 
+  name: "urish_dffram"
+"0.16": 
+  name: "greycode_top"
+  shift: true
+"0.17": 
+  name: "moyes0_top_module"
+"0.18": 
+  name: "vga_clock"
+"0.19": 
+  name: "TrainLED2_top"
+"0.20": 
+  name: "tomkeddie_a"
+  shift: true
+"0.21": 
+  name: "ternaryPC_radixconvert"
+"0.22": 
+  name: "MichaelBell_hovalaag"
+"0.23": 
+  name: "cam" # https://github.com/irtzonevrakis/tt03p5-content-addressable-memory
+"1.0": 
+  name: "loopback"
+"1.1": 
+  name: "power_test"
+"1.2": 
+  name: "htfab_totp"
+  shift: true
+"1.3":
+  name: "gatecat_fpga_top"
+"1.4": 
+  name: "Reloj_top"
+  shift: true
+"1.5": 
+  name: "algofoogle_solo_squash"
+"1.6": 
+  name: "apu_pulse"
+"1.7": 
+  name: "thorkn_vgaclock"
+"1.16": 
+  name: "ringosc_cnt_pfet"
+"1.17": 
+  name: "wokwi_347497504164545108" # psychogenic/tt03p5-7segstringdisplay
+"1.18": 
+  name: "wokwi_347144898258928211" # psychogenic/tt03p5-UARTstring
+"1.19": 
+  name: "wokwi_347417602591556180" # psychogenic/tt03p5-padlock
+"1.20": 
+  name: "millerresearch_top"
+"1.21": 
+  name: "psychogenic_neptuneproportional"
+"1.22": 
+  name: "test"
+"1.23": 
+  name: "urish_sram_poc"
+  sram: true

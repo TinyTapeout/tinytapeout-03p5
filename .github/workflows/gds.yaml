@@ -24,6 +24,7 @@ jobs:
       with:
         repository: tinytapeout/tt-multiplexer
         path: tt-multiplexer
+        ref: tt03p5
 
     - name: checkout tt-support-tools repo
       uses: actions/checkout@v3
@@ -47,11 +48,11 @@ jobs:
           version: '2023-05-27'
           github-token: ${{ secrets.GITHUB_TOKEN }}
    
-    - name: Fetch user project, update caravel configuration
-      run: python ./tt/configure.py --clone-all --fetch-gds --update-caravel
-      env:
-        GH_TOKEN:       ${{ secrets.GH_TOKEN }}
-        GH_USERNAME:    ${{ secrets.GH_USERNAME }}
+    #- name: Fetch user project, update caravel configuration
+    #  run: python ./tt/configure.py --clone-all --fetch-gds --update-caravel --sram-support
+    #  env:
+    #    GH_TOKEN:       ${{ secrets.GH_TOKEN }}
+    #    GH_USERNAME:    ${{ secrets.GH_USERNAME }}
 
     - name: Install tools
       run: make setup
@@ -63,9 +64,11 @@ jobs:
         git clone --depth=1 --branch $OPENLANE_TAG https://github.com/The-OpenROAD-Project/OpenLane.git $OPENLANE_ROOT
         cd $OPENLANE_ROOT
         make
-    
-    - name: patch tt-multiplexer
-      run: git apply --directory=tt-multiplexer tt_mux.patch
+
+    # uncompress any gds commited to the repo
+    - name: uncompress gds
+      run: | 
+        make uncompress
 
     - name: generate tt_user_module.v
       run: make gen-user-module
@@ -76,9 +79,6 @@ jobs:
 
     - name: make tt_mux GDS
       run: make tt_mux
-
-    - name: make tt_um_test GDS
-      run: make tt_um_test
 
     # Create caravel config
     - name: Generate macro.cfg
@@ -92,6 +92,12 @@ jobs:
       with:
           name: GDS
           path: openlane/user_project_wrapper/runs/user_project_wrapper/results/final/*
+
+    - name: upload user_project_wrapper artifact
+      uses: actions/upload-artifact@v3
+      with:
+          name: user_project_wrapper
+          path: openlane/user_project_wrapper/runs
 
     - name: upload macros artifact
       uses: actions/upload-artifact@v3

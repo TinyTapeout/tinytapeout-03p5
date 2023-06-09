@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from os import path
 import yaml
 
@@ -15,6 +16,7 @@ FIRST_ROW_Y = 897.6
 LEFT_MUX_X = 46
 RIGHT_MUX_X = 2707.10
 
+
 def get_macro_size(name):
     with open(f"lef/tt_um_{name}.lef") as f:
         for line in f:
@@ -26,15 +28,22 @@ def get_macro_size(name):
 def validate_slot_height(y, x, valid_heights):
     slot_index = f"{y}.{x}"
     if not slot_index in slots:
-        return False
+        return False, False
 
-    slot_name = slots[slot_index]
+    slot_name = slots[slot_index]["name"]
     width, height = get_macro_size(slot_name)
     if not height in valid_heights:
         raise Exception(
             f"Slot height mismatch for ${y+1}.{x} (${slot_name}): ${height} not in ${valid_heights}"
         )
-    return height
+    return height, width
+
+
+def shift_slot(y, x):
+    slot_index = f"{y}.{x}"
+    if not slot_index in slots:
+        return False
+    return slots[slot_index].get("shift", False)
 
 
 macrofile = open(MACRO_CFG_PATH, "w")
@@ -58,14 +67,18 @@ for y in range(ROWS):
     for x in range(MUX_COLS):
         # Left branch
         pos_x = LEFT_MUX_X + x * 170.66
-        if validate_slot_height(y + 1, x, valid_heights=[108.800]):
+        slot_height, slot_width = validate_slot_height(y + 1, x, valid_heights=[108.800, 220.320])
+        if slot_height:
+            pos_y = top_y
+            if shift_slot(y + 1, x):
+                pos_y += slot_height
             macrofile.write(
-                f"tt_top1.branch\[{mux_idx}\].col_um\[{x}\].um_top_I.block_{mux_idx+1}_{x}.tt_um_I  {pos_x: <7.2f} {top_y:.2f}   FS\n"
+                f"tt_top1.branch\[{mux_idx}\].col_um\[{x}\].um_top_I.block_{mux_idx+1}_{x}.tt_um_I  {pos_x: <7.2f} {pos_y:.2f}   FS\n"
             )
-        slot_height = validate_slot_height(y, x, valid_heights=[108.800, 220.320])
+        slot_height, slot_width = validate_slot_height(y, x, valid_heights=[108.800, 220.320])
         if slot_height:
             pos_y = bottom_y - slot_height + 108.8
-            if x == 0: # as1802 - 8 slot wide, so put it below the others
+            if shift_slot(y, x):
                 pos_y -= slot_height
             macrofile.write(
                 f"tt_top1.branch\[{mux_idx}\].col_um\[{x}\].um_bot_I.block_{mux_idx}_{x}.tt_um_I  {pos_x: <7.2f} {pos_y:.2f}   N\n"
@@ -73,16 +86,28 @@ for y in range(ROWS):
 
         # Right branch
         pos_x = RIGHT_MUX_X - x * 170.66
-        if validate_slot_height(y + 1, x + 16, valid_heights=[108.800]):
+        slot_height, slot_width = validate_slot_height(y + 1, x + 16, valid_heights=[108.800, 220.320])
+        if slot_height:
             macrofile.write(
                 f"tt_top1.branch\[{mux_idx+1}\].col_um\[{x}\].um_top_I.block_{mux_idx+1}_{x+16}.tt_um_I {pos_x: <7.2f} {top_y:.2f}   S\n"
             )
-        slot_height = validate_slot_height(y, x + 16, valid_heights=[108.800, 220.320])
+        slot_height, slot_width = validate_slot_height(y, x + 16, valid_heights=[108.800, 220.320])
         if slot_height:
             pos_y = bottom_y - slot_height + 108.8
+            if shift_slot(y, x + 16):
+                pos_y -= slot_height
+                pos_x -= slot_width - 170.66
             macrofile.write(
                 f"tt_top1.branch\[{mux_idx+1}\].col_um\[{x}\].um_bot_I.block_{mux_idx}_{x+16}.tt_um_I {pos_x: <7.2f} {pos_y:.2f}   FN\n"
             )
     macrofile.write(f"\n")
+
+macrofile.write(f"# SRAM\n")
+for slot in slots.values():
+    if slot.get("sram", False):
+        # hard-coded for now: SRAM macro, right above urish_sram_poc
+        macrofile.write(
+            f"tt_top1.branch\[1\].col_um\[7\].um_top_I.block_1_23.sram 1512.48 1200        N\n"
+        )
 
 macrofile.close()
