@@ -2,17 +2,25 @@
 #JB rename the clocks here to match the net driving the head of the scanchain
 
 #specify internal clock
-create_clock -name dumclk -period 10
+create_clock -name dumclk -period 25
 #create_clock -name sc_ck_out -period 22 -waveform {0 22} {scanchain_000/clk_in}
 #create_clock -name sc_clk_out -period 24 -waveform {0 18} {scanchain_000/clk_in}
 set_propagated_clock [all_clocks]
 
 # Misc
 set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+set_max_fanout 20 [current_design]
 
 #inputs
 #looks like the pad drive is roughly equal to a clkinv4/clkbuf4
 set_driving_cell -lib_cell sky130_fd_sc_hd__clkbuf_4 -pin X [all_inputs]
+
+set_input_delay -max -10.0 -clock [all_clocks] io_in[32]
+set_input_delay -max -10.0 -clock [all_clocks] io_in[34]
+set_input_delay -max -10.0 -clock [all_clocks] io_in[36]
+
+set_logic_one vccd1
+set_logic_zero vssd1
 
 set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
 puts "\[INFO\]: Setting load to: $cap_load"

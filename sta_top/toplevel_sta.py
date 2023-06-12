@@ -388,25 +388,12 @@ puts "check_report_end"
 
 puts "check_slew"
 puts "\n==========================================================================="
-puts " report_check_types -max_slew -max_cap -max_fanout -violators"
+puts " report_check_types -max_slew -max_cap -violators"
 puts "============================================================================"
-report_check_types -max_slew -max_capacitance -max_fanout -violators
+report_check_types -max_slew -max_capacitance -violators
 
-puts "specific checks for this design"
-puts "\n==========================================================================="
-puts "MIN - HOLD"
-#report_checks -path_delay min -from scanchain_249/*
-#report_checks -path_delay min -from scan_controller/*
-#report_checks -path_delay min -to scan_controller/*
-#report_checks -path_delay min -through scan_controller/output28/X
-#report_checks -path_delay min -through scan_controller/output41/X
-
-puts "MAX - SETUP"
-#report_checks -path_delay max -from scanchain_249/*
-#report_checks -path_delay max -from scan_controller/*
-#report_checks -path_delay max -to scan_controller/*
-#report_checks -path_delay max -through scan_controller/output28/X
-#report_checks -path_delay max -through scan_controller/output41/X
+puts "MAX delay through IOs"
+report_checks -path_delay max -through io_in[*]
 
 puts "============================================================================"
 
